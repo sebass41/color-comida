@@ -1,0 +1,131 @@
+body{
+
+    background:linear-gradient(180deg,#58c4ff,#4f8cff);
+
+    min-height:100vh;
+
+    font-family:Segoe UI,sans-serif;
+
+}
+
+.container{
+
+    max-width:500px;
+
+}
+
+.logo{
+
+    font-size:80px;
+
+}
+
+#listaPersonas{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+
+}
+
+.persona{
+
+    background:white;
+
+    border:none;
+
+    border-radius:18px;
+
+    padding:18px;
+
+    font-size:20px;
+
+    font-weight:600;
+
+    transition:.25s;
+
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+
+}
+
+.persona:hover{
+
+    transform:scale(1.02);
+
+}
+
+.persona.activa{
+
+    background:#0d6efd;
+
+    color:white;
+
+}
+
+#continuar{
+
+    height:60px;
+
+    border-radius:18px;
+
+}
+
+.wheel{
+
+    width:280px;
+
+    height:280px;
+
+    margin:70px auto;
+
+    border-radius:50%;
+
+    background:white;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:120px;
+
+    animation:girar 1.5s linear infinite;
+
+    box-shadow:0 20px 40px rgba(0,0,0,.2);
+
+}
+
+@keyframes girar{
+
+    from{
+
+        transform:rotate(0deg);
+
+    }
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+#circuloColor{
+
+    width:180px;
+
+    height:180px;
+
+    border-radius:50%;
+
+    background:#2ecc71;
+
+    margin:auto;
+
+    box-shadow:0 0 40px rgba(46,204,113,.6);
+
+}
